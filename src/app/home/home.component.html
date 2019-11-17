@@ -1,0 +1,32 @@
+ <!-- <div *ngIf="data">
+    <div *ngFor="let post of data.articles; let i = index">
+        {{post['author']}}
+        <a routerLink="/post/{{i}}" class="card-link">Go post!</a>
+
+    </div>  
+
+
+</div>  -->
+<div class="row">
+    <div class="col-12 title">
+        QUE <i class="fas fa-eye"></i> Y NO LEER
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row" *ngIf="data">
+        <div class="col-4" *ngFor="let post of data.articles; let i = index">
+            <div class="card card_properties shadow-sm p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="{{post['urlToImage']}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title title_description">{{post['title']}}</h5>
+                    <p class="card-text text_description">{{post['description']}}</p>
+                    <button routerLink="/post/{{i}}" type="button" class="btn btn-info">Crea tu propia noticia</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

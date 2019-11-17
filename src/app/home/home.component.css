@@ -1,0 +1,20 @@
+.title {
+    height: 100px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.card_properties {
+    border: none;
+
+}
+
+.tittle_description {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.text_description {
+    font-family: 'Montserrat', sans-serif;
+}

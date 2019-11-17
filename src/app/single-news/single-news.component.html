@@ -1,0 +1,86 @@
+<div class="row">
+    <div routerLink="/home/" class="col-12 title">
+        QUE <i class="fas fa-eye"></i> Y NO LEER
+    </div>
+</div>
+
+<hr>
+
+<div class="row  cont_properties">
+    <div class="col-6">
+        <img class="user_img" src="{{post.urlToImage}}">
+        <div class="row">
+            <div class="col-12">
+
+                <div *ngIf="views[0] === true">
+                    <form #userForm="ngForm">
+                        <div class="form-group form_cont">
+                            <textarea class="textarea_prop shadow p-3 mb-5 bg-white rounded" maxlength="800"
+                                #midescription="ngModel" name="textoUsuario" [(ngModel)]="textoUsuario" type="textarea"
+                                aria-describedby="textoUsuarioHelp" placeholder="Escribe tu propia noticia"></textarea>
+
+                            <div class="btns_props">
+                                <button (click)="printText()" type="submit"
+                                    class="btn btn-dark btn_publish mr-3">Publicar</button>
+
+                                <button (click)="showView([false,true])" type="submit"
+                                    class="btn btn-dark btn_publish mr-3">ver
+                                    noticia real</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div *ngIf="views[1] === true">
+                    <div class="card realNews_card">
+                        <div class="card-body">
+                            <h5 class="card-title tittle_description">{{post.title}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{post.author}}</h6>
+                            <p class="card-text text_description ">{{post.content}}</p>
+                            <a href="{{post.url}}" class="card-link">Ir a noticia completa</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="col-6 userNews_bg">
+        <div class="row">
+            <div class="col-12"></div>
+            <p class="user_title">The You Times</p>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <img class="userNews_img" src="{{post.urlToImage}}">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="userNews_cont">
+                    <p>{{userOutput}}</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!--
+<div *ngIf="post">
+    {{post.content}}
+    {{post.author}}
+
+</div> -->

@@ -1,0 +1,93 @@
+.title {
+    height: 100px;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    margin-top: 20px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.card_properties {
+    border: none;
+}
+
+.card-link {
+    color: #4BA0B5;
+}
+
+.form_cont{
+    display: inline-grid;
+}
+
+.tittle_description {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.text_description {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.user_title {
+    font-family: 'Pirata One', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 260px;
+    
+}
+
+
+.user_img {
+    max-width: 500px;
+    margin-left: 135px;
+    margin-top: 40px;
+    
+}
+
+.userNews_img {
+    max-width: 450px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin-left: 150px;
+}
+
+.userNews_bg {
+    background-color: #F7F6F0;
+    
+}
+
+.userNews_cont {
+    width: 450px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 150px;
+    font-family: 'Fenix', serif;
+}
+
+.textarea_prop {
+    width: 500px;
+    height: 200px;
+    margin-left: 133px;
+    margin-top: 40px;
+    border: none;
+    outline: none;
+}
+
+
+.btns_props {
+    position: relative;
+    display: inline-flex;
+    margin-left: 130px;
+}
+
+.cont_properties {
+    margin: 40px;
+    padding-right: 20px;
+}
+
+.realNews_card {
+    width: 500px;
+    margin-left: 133px;
+    margin-top: 20px;
+}
