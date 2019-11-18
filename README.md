@@ -1,4 +1,4 @@
-# QUE VER Y NO LEER <img src="https://github.com/osoriolina/queverynoleer/blob/master/src/assets/logo.png">
+<img src="https://github.com/osoriolina/queverynoleer/blob/master/src/assets/logo.png">
 
 ## this is a project that uses the Google news API that gives the user the possibility of being its own journalist. 
 
